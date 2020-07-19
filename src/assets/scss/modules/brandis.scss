@@ -1,0 +1,95 @@
+.brandis {
+  width: 100%;
+  background-color: $color-second;
+  overflow: hidden;
+}
+
+.brandis__wrapper {
+  @include wrapper;
+  background-image: url("../img/brandis.png");
+  background-position: 0 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include respond-above ($breakpoints-mobile) {
+    background-image: none;
+    padding-bottom: 267px;
+  }
+}
+
+.brandis__content {
+  padding-top: 116px;
+  padding-bottom: 116px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  @include respond-above ($breakpoints-desktop) {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+  }
+}
+
+.brandis__picture {
+  display: none;
+
+  @include respond-above ($breakpoints-mobile) {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 640px;
+    height: 267px;
+    content: "";
+  }
+}
+
+.brandis__content h2 {
+  @include content;
+  @include tondoCorpBold(40px, $color-first, 52px);
+  margin-bottom: 48px;
+  max-width: 620px;
+
+  @include respond-above ($breakpoints-desktop) {
+    width: 50%;
+  }
+
+  @include respond-above ($breakpoints-tablet) {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+
+  @include respond-above ($breakpoints-mobile) {
+    width: 100%;
+  }
+}
+
+.brandis__content p {
+  @include content;
+  @include tondoCorpRegular(16px, $color-first, 24px);
+  margin-bottom: 48px;
+  max-width: 620px;
+
+  @include respond-above ($breakpoints-desktop) {
+    width: 50%;
+  }
+
+  @include respond-above ($breakpoints-tablet) {
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+
+  @include respond-above ($breakpoints-mobile) {
+    width: 100%;
+  }
+}
+
+.brandis__content img {
+  @include respond-above ($breakpoints-tablet) {
+    margin-bottom: 25px;
+  }
+}

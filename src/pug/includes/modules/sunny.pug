@@ -1,0 +1,13 @@
+include ../../utils/mixins
+
+section(class="sunny")
+    .sunny__wrapper
+        .sunny__content
+            h2 Какой Sunny озарит&nbsp;вашу ванную?
+            .sunny__catalog.catalog
+                ul(class="catalog__list")
+                    +sunny({name: 'Смеситель для умывальника', src: 'assets/img/sunny-1.jpg', href: '#'})
+                    +sunny({name: 'Смеситель для умывальника с гигиеническим душем', src: 'assets/img/sunny-2.jpg', href: '#'})
+                    +sunny({name: 'Смеситель для ванны и душа', src: 'assets/img/sunny-3.jpg', href: ''})
+                    +sunny({name: 'Смеситель для душа', src: 'assets/img/sunny-4.jpg', href: '#'})
+            button(type="button") Купить

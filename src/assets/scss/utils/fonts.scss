@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'TondoCorp-Light';
+  src: url("../fonts/TondoCorp-Light.woff") format("woff"), url("../fonts/TondoCorp-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TondoCorp-Regular';
+  src: url("../fonts/TondoCorp-Regular.woff") format("woff"), url("../fonts/TondoCorp-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TondoCorp-Bold';
+  src: url("../fonts/TondoCorp-Bold.woff") format("woff"), url("../fonts/TondoCorp-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

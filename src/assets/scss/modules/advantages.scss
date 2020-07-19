@@ -1,0 +1,44 @@
+.advantages {
+  width: 100%;
+  background-color: $color-fourth;
+}
+
+.advantages ul {
+  @include list;
+}
+
+.advantages__wrapper {
+  @include wrapper;
+}
+
+.advantages__list img {
+  width: 100%;
+  height: auto;
+}
+
+//h2 {
+//  @include tondoCorpBold(50px, $color-second, 65px);
+//
+//  @include respond-above ($breakpoints-tablet) {
+//    font-size: 24px;
+//    line-height: 31px;
+//  }
+//}
+//
+//h2 {
+//  @include tondoCorpBold(40px, $color-second, 52px);
+//
+//  @include respond-above ($breakpoints-tablet) {
+//    font-size: 18px;
+//    line-height: 23px;
+//  }
+//}
+//
+//p {
+//  @include tondoCorpRegular(16px, $color-second, 24px);
+//
+//  @include respond-above ($breakpoints-tablet) {
+//    font-size: 13px;
+//    line-height: 19px;
+//  }
+//}

@@ -1,0 +1,95 @@
+.sunny {
+  width: 100%;
+  background-color: $color-second;
+}
+
+.sunny__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  @include respond-above ($breakpoints-desktop) {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include respond-above ($breakpoints-mobile) {
+    min-width: 320px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+}
+
+.sunny__content {
+  border-radius: 10.5px;
+  background-color: $color-third;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @include respond-above ($breakpoints-desktop) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include respond-above ($breakpoints-mobile) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.sunny__content h2 {
+  @include content;
+  @include tondoCorpBold(40px, $color-first, 52px);
+  margin: 0 auto;
+  margin-bottom: 48px;
+  text-align: center;
+  max-width: 425px;
+
+  @include respond-above ($breakpoints-tablet) {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 25px;
+    max-width: 215px;
+  }
+}
+
+.sunny__content button {
+  @include button;
+  @include tondoCorpRegular(13px, $color-first, 17px);
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  width: 155px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  padding-right: 48px;
+  position: relative;
+  border: 1px solid #222222;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.sunny__content button:after {
+  display: block;
+  width: 24px;
+  height: 14px;
+  position: absolute;
+  @include icon;
+  background-size: 24px 14px;
+  right: 25px;
+  top: 11px;
+  background-image: url("../img/buy.svg");
+  background-color: red;
+}
+
+.sunny__content button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 21px 0 rgba(0,0,0,.08);
+}
